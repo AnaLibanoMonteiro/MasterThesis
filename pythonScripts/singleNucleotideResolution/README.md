@@ -11,31 +11,31 @@ Creates a bam file with the last nucleotide of the reads.
 LAST base from reads with flag 147.
 FIRST base from reads with flag 163.
 
-Usage:
-TODO!!
+Usage:  
+`get_SNR_3prime-ALM.py [-h] [-o [outfilename]] [-d [outdir]] <input bam filepath>`
 
 ## **get_SNR_3prime_not_part_of_fragment-ALM.py**
-Same as previous. (The only difference is that the soft clipped nucleotides are not considered as part of the fragment)
+Same as previous.  
+(The only difference is that the soft clipped nucleotides are not considered as part of the fragment.)
 
 
 ### **Diagram of reads and flags:**
 
 #### **If RNA molecule comes from DNA forward strand:**
 
-    R1 - flag 99
+&nbsp;&nbsp;&nbsp;&nbsp;R1 - flag 99  
 5' ---------------> 3'  
 5' ----------------------------------------------------------> 3'  
-                                           5' ---------------> 3'
-                                               R2 - flag 147
-
+&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &nbsp; 5' ---------------> 3'  
+&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &nbsp; R2 - flag 147  
 *Get LAST nucleotide of R2 (147)*
 
 #### **If RNA molecule comes from DNA reverse strand:**
 
-                                                R1 - flag 83
-                                           5' ---------------> 3'
-3' <---------------------------------------------------------- 5'
-5' ---------------> 3'
-    R2 - flag 163
+&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &nbsp; R1 - flag 83  
+&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &nbsp; 5' ---------------> 3'  
+3' <---------------------------------------------------------- 5'  
+5' ---------------> 3'  
+&nbsp;&nbsp;&nbsp;&nbsp;R2 - flag 163
 
 *Get FIRST nucleotide of R2 (163)*

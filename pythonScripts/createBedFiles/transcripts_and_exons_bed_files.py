@@ -149,7 +149,7 @@ def adjust_exon_id(df):
     return df_temp
 
 def get_surrounding_nucleotides(line, window_size=200):
-    """If windo_size==200, it will get the 100 upstream nucleotides and 100 downstream nucleotides
+    """If window_size==200, it will get the 100 upstream nucleotides and 100 downstream nucleotides
     of the input nucleotide (line).
     """
     surrounding_nucleotides = []

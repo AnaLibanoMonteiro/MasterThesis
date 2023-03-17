@@ -6,7 +6,13 @@
 #                                         #
 ###########################################
 
-## TODO!! FINISH DESCRIPTION!!!
+"""
+Takes as input the result file from an intersection between a
+bed file with introns windows and a bam file.  
+Creates a csv file with the splicing ratio for each event (intron) considered in the bed file.
+"""
+
+## SCHEME OF INTRONS WINDOWS:
 
 """
 FORWARD > > > >
