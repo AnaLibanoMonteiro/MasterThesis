@@ -34,6 +34,7 @@ Creates several plots based on the splicing ratio.
 
 Usage:  
 `plots_immediate_splicing_ratio.py [-h] [-c [<cutoff filepath>]] [-d [outdir]] <immediateSplicingRatio filepath> <sample group>`  
+
 `-c` or `--cutoffFilepath` is the path for the file that has the cutoff values - minimun number of reads that an intron must have to be considered for the analysis.  
 It has the following columns:  
 `sample_name` | `sample_group` | `time_point` | `cutoff`

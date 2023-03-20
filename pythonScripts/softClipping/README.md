@@ -22,6 +22,7 @@ Adds a colum to the csv file with the real sequence of soft clipped regions.
 
 Usage:  
 `complete_soft_clipped_info.py [-h] [-r [replace]] <input csv filepath> <input fasta filepath>`  
+
 `-r` or `--replace` option will replace the csv file with the completed one.
 
 ### **Fastas files are created with:**  
@@ -31,13 +32,12 @@ Usage:
 `> output.fasta`
 
 
-
 ## **plot_soft_clipped_info.py**
 Takes as input the csv file with soft clipped reads information completed with genome reference sequence.
 Creates several plots describing soft clipping info.
 
 Usage:  
-`plot_soft_clipping_info.py [-h] [-d [outdir]] <sample Name> <input csv filepath>`
+`plot_soft_clipping_info.py [-h] [-d [outdir]] <sample Name> <input csv filepath>`  
 
 ## **get_soft_clipped_reads_3prime.py**
 Takes as input a bam file.  
